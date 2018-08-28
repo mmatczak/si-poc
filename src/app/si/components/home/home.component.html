@@ -8,6 +8,28 @@
   </button>
 </div>
 
+<div class="input-group pickdater">
+  <input type="text" class="form-control valid" id="datepickertest3" name="datepickertest3"
+         data-date-format="DD.MM.YYYY" aria-invalid="false">
+  <span class="input-group-addon">
+                <span class="fa fa-calendar"></span>
+              </span>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-12 col-md-4 form-group">
+      <input type="text"
+             class="form-control"
+             #dp="bsDatepicker"
+             bsDatepicker>
+    </div>
+    <div class="col-xs-12 col-12 col-md-3 form-group">
+      <button class="btn btn-success" (click)="dp.toggle()" [attr.aria-expanded]="dp.isOpen">Date Picker</button>
+    </div>
+  </div>
+</div>
+
 <div class="panel-group">
   <app-si-accordion title="Panel 01">
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean

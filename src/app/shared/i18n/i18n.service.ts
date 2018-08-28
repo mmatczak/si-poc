@@ -17,7 +17,7 @@ export class I18nService implements OnDestroy {
   private brandSubject = new BehaviorSubject('vw');
   brands$ = this.brandSubject.asObservable();
 
-  constructor(private router: Router, private translate: TranslateService, private meta: Meta) {
+  constructor(private router: Router, private translate: TranslateService) {
   }
 
   getImages(): string {
