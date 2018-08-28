@@ -9,6 +9,7 @@ import {SiModule} from './si/si.module';
 import {RouterModule} from '@angular/router';
 import {routes} from './shared/routing/routes';
 import {DOCUMENT} from '@angular/common';
+import {brandCssFiles} from './shared/i18n/elements/elements';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ export class AppModule {
       linkElement.setAttribute('rel', 'stylesheet');
       linkElement.setAttribute('type', 'text/css');
     }
-    linkElement.setAttribute('href', `assets/${brand}.css`);
+    linkElement.setAttribute('href', brandCssFiles[brand]);
 
     const head = this.document.querySelector('head');
     head.appendChild(linkElement);

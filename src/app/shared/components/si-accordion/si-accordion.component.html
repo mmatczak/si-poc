@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a class="panel-toggle" [class.collapsed]="collapsed" [attr.aria-expanded]="!collapsed" (click)="toggle()">{{title}}</a>
+      <i class="indicator"></i>
+    </h4>
+  </div>
+  <div id="collapseOne" class="panel-collapse collapse" [class.in]="!collapsed" [attr.aria-expanded]="!collapsed" [style.height]="collapsed ? '0' : 'inherit'">
+    <div class="panel-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

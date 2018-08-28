@@ -3,9 +3,8 @@ import {translations} from './translations';
 import {TranslateService} from '@ngx-translate/core';
 import {NavigationEnd, Router} from '@angular/router';
 import {RouterEvent} from '@angular/router/src/events';
-import {images} from './images';
 import {elements} from './elements/elements';
-import {BehaviorSubject, Subject} from 'rxjs';
+import {BehaviorSubject} from 'rxjs';
 import {Meta} from '@angular/platform-browser';
 import {DEFAULT_BRAND, DEFAULT_LANG} from '../routing/routes';
 
